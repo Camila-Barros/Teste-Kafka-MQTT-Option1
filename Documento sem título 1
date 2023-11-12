@@ -1,0 +1,58 @@
+mila@mila-VirtualBox:~$ git clone https://github.com/Camila-Barros/Teste-Kafka-MQTT-Option1
+Cloning into 'Teste-Kafka-MQTT-Option1'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+mila@mila-VirtualBox:~$ cd Teste-Kafka-MQTT-Option1
+mila@mila-VirtualBox:~/Teste-Kafka-MQTT-Option1$ ls
+README.md
+mila@mila-VirtualBox:~/Teste-Kafka-MQTT-Option1$ git status
+No ramo main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+mila@mila-VirtualBox:~/Teste-Kafka-MQTT-Option1$ vi mqtt_kafka_producer.py
+mila@mila-VirtualBox:~/Teste-Kafka-MQTT-Option1$ ls -l
+total 8
+-rw-rw-r-- 1 mila mila 711 out 25 23:29 mqtt_kafka_producer.py
+-rw-rw-r-- 1 mila mila  98 out 25 23:24 README.md
+mila@mila-VirtualBox:~/Teste-Kafka-MQTT-Option1$ chmod +x mqtt_kafka_producer.py
+mila@mila-VirtualBox:~/Teste-Kafka-MQTT-Option1$ ls -l
+total 8
+-rwxrwxr-x 1 mila mila 711 out 25 23:29 mqtt_kafka_producer.py
+-rw-rw-r-- 1 mila mila  98 out 25 23:24 README.md
+mila@mila-VirtualBox:~/Teste-Kafka-MQTT-Option1$ vi mqtt_subscribe.py
+mila@mila-VirtualBox:~/Teste-Kafka-MQTT-Option1$ ls -l
+total 12
+-rwxrwxr-x 1 mila mila 711 out 25 23:29 mqtt_kafka_producer.py
+-rw-rw-r-- 1 mila mila 433 out 25 23:32 mqtt_subscribe.py
+-rw-rw-r-- 1 mila mila  98 out 25 23:24 README.md
+mila@mila-VirtualBox:~/Teste-Kafka-MQTT-Option1$ chmod +x mqtt_subscribe.py
+mila@mila-VirtualBox:~/Teste-Kafka-MQTT-Option1$ ls -l
+total 12
+-rwxrwxr-x 1 mila mila 711 out 25 23:29 mqtt_kafka_producer.py
+-rwxrwxr-x 1 mila mila 433 out 25 23:32 mqtt_subscribe.py
+-rw-rw-r-- 1 mila mila  98 out 25 23:24 README.md
+mila@mila-VirtualBox:~/Teste-Kafka-MQTT-Option1$ git add.
+git: 'add.' não é um comando git. Veja 'git --help'.
+
+The most similar command is
+	add
+mila@mila-VirtualBox:~/Teste-Kafka-MQTT-Option1$ git add
+Nada especificado, nada adicionado
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+mila@mila-VirtualBox:~/Teste-Kafka-MQTT-Option1$ git add .
+mila@mila-VirtualBox:~/Teste-Kafka-MQTT-Option1$ git commit -m "criado um produtor e um consumidor"
+[main eafaed2] criado um produtor e um consumidor
+ 2 files changed, 36 insertions(+)
+ create mode 100755 mqtt_kafka_producer.py
+ create mode 100755 mqtt_subscribe.py
+mila@mila-VirtualBox:~/Teste-Kafka-MQTT-Option1$ git push
+fatal: não foi possível acessar 'https://github.com/Camila-Barros/Teste-Kafka-MQTT-Option1/': Couldn't connect to server
+mila@mila-VirtualBox:~/Teste-Kafka-MQTT-Option1$ 
+
+
