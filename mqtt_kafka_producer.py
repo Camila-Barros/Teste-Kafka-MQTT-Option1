@@ -1,5 +1,3 @@
-#!/bin/bash
-
 import paho.mqtt.client as mqtt
 from pykafka import KafkaClient
 from random import uniform
